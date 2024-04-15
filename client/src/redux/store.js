@@ -1,4 +1,4 @@
-import { createStore } from 'redux'
+import { createStore } from 'redux';
 import reducers from './reducer';
 
 // let preloadedState
@@ -12,4 +12,4 @@ import reducers from './reducer';
 
 // const store = createStore(rootReducer, preloadedState)
 
-export default store;
+export default createStore(reducers);
