@@ -1,10 +1,9 @@
 function Jumbotron({ children }) {
   return (
-    <div
+    <Provider
       style={{ height: 560, clear: "both", paddingTop: 120, textAlign: "center" }}
-    >
-      {children}
-    </div>
+      {...children}
+    />
   );
 }
 
