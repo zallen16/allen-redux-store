@@ -1,9 +1,13 @@
 import Auth from "../../utils/auth";
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from "react-router-dom";
 
 function Nav() {
-
+  
   function showNavigation() {
+    const dispatch = useDispatch();
+    const state = useSelector(state => state);
+    
     if (Auth.loggedIn()) {
       return (
         <ul className="flex-row">
